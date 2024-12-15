@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body>
+    <h1>Choose a background color</h1>
+    <input type="color" id="colorPicker">
+    <button onclick="changeBackgroundColor()">Apply Color</button>
+
+    <script>
+        function changeBackgroundColor() {
+            const color = document.getElementById('colorPicker').value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
